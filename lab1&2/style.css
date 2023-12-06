@@ -1,0 +1,314 @@
+/*________Fonts___________*/
+
+@font-face {
+    font-family: Roboto-Bold;
+    /* Гарнитура шрифта */
+    src: url("fonts/Roboto-Bold.ttf");
+    /* И путь к файлу этой гарнитуры */
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+/*___________basa______________*/
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    background: #828282;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+
+}
+
+img:before {
+    content: "Незагруженная картинка, на которой ";
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 18px;
+    font-family: Roboto-Regular;
+    overflow-x: auto;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+p {
+    font-family: Roboto-Regular;
+}
+
+.container {
+    margin: 0 15%;
+    max-width: 1200px;
+}
+
+/*________Header_________________*/
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    height: 90px;
+}
+
+/*_______Меню навигации________*/
+.menu li {
+    margin: auto 0;
+}
+
+.menu li a {
+    color: #828282;
+}
+
+
+/*____Надписи о себе_______*/
+.face {
+    padding-bottom: 100px;
+}
+
+.hello {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 180px;
+}
+
+.hello p {
+    flex-grow: 1;
+    margin: auto 0;
+}
+
+.name {
+    font-size: 45px;
+}
+
+.career {
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+/*________About me____________*/
+
+.about-me {
+    background: #F6F6F6;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-me .text {
+    width: 70%;
+    margin: 15px auto 0;
+}
+
+/*____________Skills____________*/
+
+.skills {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.skills .container > p {
+    margin: 70px 0;
+}
+
+.all-programs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.skills-program {
+    width: auto;
+}
+
+.program1 .program-icon {
+    height: 90px;
+    width: 90px;
+    margin: 10px auto;
+    background-color: #fff; 
+}
+
+
+.program1 .program-icon.ae {
+    background: url('images/ae.png') center/cover;
+}
+
+.program1 .program-icon.ai {
+    background: url('images/ai.png') center/cover;
+}
+
+.program1 .program-icon.ps {
+    background: url('images/ps.png') center/cover;
+}
+
+.program1 .program-icon.fc {
+    background: url('images/fc.png') center/cover;
+}
+
+
+.program-name {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/*____Рейтинг_____*/
+
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating-mini span {
+    padding: 0;
+    font-size: 32px;
+    line-height: 1;
+    color: #E5E5E5;
+}
+
+.rating-mini > span:before {
+    content: '★';
+}
+
+.rating-mini > span.active {
+    color: #000;
+}
+
+
+/*_________Portfolio_________*/
+
+.portfolio {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.all-works {
+    display: flex;
+    flex-flow: column;
+}
+
+.work {
+    margin-bottom: 100px;
+}
+
+.portfolio .container > h1 {
+    margin-bottom: 50px;
+}
+
+.work img {
+    margin-bottom: 30px;
+}
+
+.work a {
+    text-decoration: underline;
+    color: #000;
+    font-family: Roboto-Regular;
+}
+
+
+/*_____Contacts____*/
+
+.contacts {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contacts .container > p {
+    margin: 40px auto;
+    width: 250px;
+}
+
+.contacts-send {
+    height: 40px;
+    width: 185px;
+    line-height: 40px;
+    margin: 0 auto 80px;
+    vertical-align: middle;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.media {
+    background: #fff;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.media .icon {
+    margin: 0 20px;
+    height: 50px;
+    width: 50px;
+}
+
+
+/*Адаптация под маленькие экраны*/
+
+
+@media (max-width: 780px) {}
+
+@media (max-width: 480px) {
+    body {}
+
+    .container {
+        margin: 0px 5px;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        height: 90px;
+    }
+
+    .menu li {
+        text-align: center;
+    }
+
+    .hello {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .face,
+    .about-me,
+    .skills,
+    .portfolio,
+    .contacts {
+        padding: 20px 0px;
+    }
+
+    .skills .container > p {
+        margin: 20px 0;
+    }
+
+}

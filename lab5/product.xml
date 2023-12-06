@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <id>1</id>
+        <name>Телефон</name>
+        <price>500</price>
+        <descr>Смартфон нового поколения</descr>
+    </product>
+    <product>
+        <id>2</id>
+        <name>Книга</name>
+        <price>30</price>
+        <descr>Лучшие бестселлеры и классика</descr>
+    </product>
+    <product>
+        <id>3</id>
+        <name>Футболка</name>
+        <price>20</price>
+        <descr>Комфортная одежда для повседневной носки</descr>
+    </product>
+</products>

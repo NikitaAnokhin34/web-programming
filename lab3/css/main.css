@@ -1,0 +1,106 @@
+/* Обнуление отступов, бордюров и размера текста */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Убираем фокусные обводки */
+:focus,
+:active {
+    outline: none;
+}
+
+/* Убираем подчеркивание у ссылок при фокусе и активации */
+a:focus,
+a:active {
+    outline: none;
+}
+
+/* Делаем некоторые элементы блочными */
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+/* Настройки шрифта и размера текста */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Tahoma', sans-serif;
+}
+
+/* Настройки для формы ввода, кнопок и изображений */
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Стили для body */
+body {
+    background: rgb(243, 197, 182);
+}
+
+/* Стили для кнопок */
+button {
+    background-color: darksalmon;
+    padding: 10px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 5px 50px;
+}
+
+th, td {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+/* Стили для текстового поля */
+input {
+    padding: 10px 20px;
+    font-size: 15px;
+}

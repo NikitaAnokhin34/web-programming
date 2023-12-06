@@ -1,0 +1,77 @@
+body {
+    background: #3F3F3F;
+}
+
+h1 {
+    font: bold 40px Montserrat, sans-serif;
+    color: whitesmoke;
+    alignment: center;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+    font: 24px "sans-serif";
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
+th {
+    font-weight: bold;
+}
+
+.prod-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font: bold 24px Montserrat, sans-serif;
+    color: whitesmoke;
+}
+
+.items {
+    font: bold 24px Montserrat, sans-serif;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 5% 5%;
+}
+
+textarea {
+    border-radius: 10px;
+    resize: none;
+}
+
+.prod-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+button {
+    border-radius: 5px;
+    background: whitesmoke;
+    margin-left: 35%;
+    margin-right: 65%;
+}
+
+a {
+    text-decoration: none;
+    alignment: center;
+}
+
+form {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
